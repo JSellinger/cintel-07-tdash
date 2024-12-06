@@ -9,6 +9,9 @@ df = palmerpenguins.load_penguins()
 
 ui.page_opts(title="Palmer Penguins Data Dashboard", fillable=True)
 
+ui.tags.style(
+    ".card-header { color:white; background:#2A2A2A !important; }"
+)
 
 with ui.sidebar(title="Filter controls"):
     ui.input_slider("mass", "Mass", 2000, 6000, 6000)
